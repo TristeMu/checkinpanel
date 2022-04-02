@@ -75,6 +75,16 @@
             "running": true
         },
         {
+            "name": "随机定时",
+            "type": "cron",
+            "time": "0 0 * * *",
+            "job": {
+                "type": "runjs",
+                "target": "https://ghproxy.com/https://github.com/Oreomeow/checkinpanel/master/checkin_ran.js"
+            },
+            "running": true
+        },
+        {
             "name": "复制 checkins_pkg.js",
             "type": "cron",
             "time": "25 16 * * *",
